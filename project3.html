@@ -235,39 +235,11 @@
         <h1>High-Speed Inspection System</h1>
 
         <div class="project-meta">
-            <span class="tag">React</span>
-            <span class="tag">Node.js</span>
-            <span class="tag">MongoDB</span>
-            <span class="tag">API Development</span>
+            <span class="tag">Arduino</span>
+            <span class="tag">C Programming</span>
+            <span class="tag">Motor Interfacing</span>
+            <span class="tag"></span>
         </div>
-
-        <img src="HighSpeed.PNG" 
-             alt="Project Screenshot" 
-             class="project-image">
-
-        <div class="project-description">
-            <p>
-                This project is a comprehensive web application designed to solve real-world problems 
-                through intuitive design and powerful functionality. Built with modern technologies 
-                and best practices, it demonstrates full-stack development capabilities.
-            </p>
-
-            <h2>Overview</h2>
-            <p>
-                The application provides users with a seamless experience for managing complex workflows. 
-                It features a responsive React frontend that communicates with a robust Node.js backend, 
-                storing data efficiently in MongoDB.
-            </p>
-
-            <h2>Key Features</h2>
-            <p>
-                • Real-time data synchronization across multiple devices<br>
-                • User authentication and authorization system<br>
-                • RESTful API design with comprehensive documentation<br>
-                • Responsive design that works on all screen sizes<br>
-                • Advanced search and filtering capabilities
-            </p>
-
             <div class="video-container">
                 <iframe 
                     src="https://youtube.com/shorts/E8n86Y2xF0E?si=8Nxat_wcjmJqsdtY" 
@@ -278,18 +250,39 @@
                 </iframe>
             </div>
 
+        <div class="project-description">
+            <p>
+                Designed and implemented an automated conveyor-based inspection and sorting 
+                system capable of classifying and sorting 48 mixed-material parts in under 60 seconds.            </p>
+
+            <h2>Overview</h2>
+            <p>
+                The system integrated a DC-driven conveyor, stepper-motor-controlled sorting tray, 
+                multiple sensors, and real-time embedded software on an ATmega2560.
+            </p>
+
+            <h2>Key Features</h2>
+            <p>
+                • S-curve motion profile for stepper motor  <br>
+                • Interrupt-driven sensor handling to enable continuous loading<br>
+                • PWM motor control<br>
+                • Achieving sub 24-second sorting times during demonstrations<br>
+                • Pre-dropping logic to overlap bucket rotation with part release
+            </p>
+
             <h2>Technical Challenges</h2>
             <p>
-                One of the main challenges was implementing real-time updates without sacrificing 
-                performance. This was solved by using WebSocket connections and optimizing database 
-                queries to minimize response times.
+                Achieving high-speed sorting without sacrificing reliability required balancing 
+                motor speeds, sensor accuracy, and real-time control using interrupt-driven software, 
+                calibrated ADC thresholds, and optimized stepper motion profiles.
             </p>
 
             <h2>Results</h2>
             <p>
-                The project successfully achieved all its goals, providing users with a fast, 
-                reliable, and user-friendly experience. It has been well-received by users and 
-                continues to be actively maintained and improved.
+                • Performance: <60 s requirement met; best run 24 s <br>
+                • Reliability: Stable continuous loading with optimized ISR handling <br>
+                • Complexity: Fully integrated mechanical, electrical, and software system <br>
+                    
             </p>
         </div>
 
