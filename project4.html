@@ -232,72 +232,56 @@
             Back to Projects
         </a>
 
-        <h1>Project Name One</h1>
+        <h1>Autonomous Robot</h1>
 
         <div class="project-meta">
             <span class="tag">C Programming</span>
             <span class="tag">Microntroller</span>
             <span class="tag">Finite State Machine</span>
-            <span class="tag">Engineeing Design</span>
+            <span class="tag">Engineering Design</span>
+        </div>
+        <div class="video-container">
+            <iframe 
+                src="https://www.youtube.com/embed/pL8o-1xs4Jo" 
+                title="Project Demo" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
         </div>
 
         <div class="project-description">
             <p>
-                This project is a comprehensive web application designed to solve real-world problems 
-                through intuitive design and powerful functionality. Built with modern technologies 
-                and best practices, it demonstrates full-stack development capabilities.
-            </p>
-
-            <h2>Overview</h2>
-            <p>
-                The application provides users with a seamless experience for managing complex workflows. 
-                It features a responsive React frontend that communicates with a robust Node.js backend, 
-                storing data efficiently in MongoDB.
+                This project is an autonomous robot designed to locate a target and place a ping pong
+                ball on top of it. Built using a Vex Robot kit and C, it demonstrates engineering design 
+                and programming skills.
             </p>
 
             <h2>Key Features</h2>
             <p>
-                • Real-time data synchronization across multiple devices<br>
-                • User authentication and authorization system<br>
-                • RESTful API design with comprehensive documentation<br>
-                • Responsive design that works on all screen sizes<br>
-                • Advanced search and filtering capabilities
+                • Wall-avoidance and target detection algorithms in C<br>
+                • Ultrasonic sensor to detect distance away from target<br>
+                • Able to locate target even in the presence of sunlight<br>
+                • Potentiometer to measure angular rotation of arm mechanism shaft<br>
             </p>
-
-            <div class="video-container">
-                <iframe 
-                    src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
-                    title="Project Demo" 
-                    frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                    allowfullscreen>
-                </iframe>
-            </div>
 
             <h2>Technical Challenges</h2>
             <p>
-                One of the main challenges was implementing real-time updates without sacrificing 
-                performance. This was solved by using WebSocket connections and optimizing database 
-                queries to minimize response times.
+                One of the main challenges was placing the ping pong ball on the target without it rolling off.
+                This was solved by slowing the speed of the arm when releasing the ball and encasing the 
+                ball in a box.
             </p>
 
             <h2>Results</h2>
             <p>
-                The project successfully achieved all its goals, providing users with a fast, 
-                reliable, and user-friendly experience. It has been well-received by users and 
-                continues to be actively maintained and improved.
+                The project successfully achieved its goals as seen in the demo video. 
             </p>
-        </div>
-
-        <div class="project-links">
-            <a href="#" class="btn">View Live Demo</a>
-            <a href="#" class="btn-secondary">View on GitHub</a>
         </div>
     </div>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2026 Your Name. Built with passion and coffee.</p>
+        <p>&copy; 2026 Mara Pajuelo. Built with passion and coffee.</p>
     </footer>
 </body>
 </html>
