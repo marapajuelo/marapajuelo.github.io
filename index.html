@@ -108,20 +108,35 @@
         }
 
         /* About Section */
-        .about-content {
-            
-            max-width: 800px;
-            margin: 0 auto;
-            font-size: 1.1rem;
+        #about {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
             text-align: center;
-            line-height: 1.8;
-            color: #fff;
+            padding: 5rem 2rem;
 
             background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('IMG_3146.JPEG');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
             position: relative;
+        }
+        #about h2 {
+            color: #fff;
+            margin-bottom: 3rem;
+        }
+        .about-content p {
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 1.1rem;
+            text-align: center;
+            line-height: 1.8;
+            color: #fff;
+        }
+        .about-content p {
+            margin-bottom: 1rem;
         }
 
         /* Projects Grid */
