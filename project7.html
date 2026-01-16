@@ -250,18 +250,15 @@
         
         <h2>Key Features</h2>
         <p>
-            • Real-time data synchronization across multiple devices<br>
-            • User authentication and authorization system<br>
-            • RESTful API design with comprehensive documentation<br>
-            • Responsive design that works on all screen sizes<br>
-            • Advanced search and filtering capabilities
+            • RGB color segmentation with Euclidean distance matching<br>
+            • DBSCAN clustering with size filtering to remove noise and non-apple objects<br>
+            • Successfully detected 145 apples with zero false positives
         </p>
 
         <h2>Technical Challenges</h2>
         <p>
-            One of the main challenges was implementing real-time updates without sacrificing 
-            performance. This was solved by using WebSocket connections and optimizing database 
-            queries to minimize response times.
+            The red color template failed to detect yellow/green apples and dark apples in shadow, and
+            the lack of shape analysis caused overlapping apples to be incorrectly grouped as one.
         </p>
 
         <h2>Project 2: Detecting Cars in a Parking Lot Using Template Matching</h2>
@@ -272,18 +269,16 @@
         
         <h2>Key Features</h2>
         <p>
-            • Real-time data synchronization across multiple devices<br>
-            • User authentication and authorization system<br>
-            • RESTful API design with comprehensive documentation<br>
-            • Responsive design that works on all screen sizes<br>
-            • Advanced search and filtering capabilities
+            • Template matching using normalized cross-correlation (NCC) for lighting-invariant detection<br>
+            • Color-based detection with DBSCAN clustering to identify multiple similar vehicles<br>
+            • Automated bounding boxes around top 5 detected cars
+            </pr>
         </p>
 
         <h2>Technical Challenges</h2>
         <p>
-            One of the main challenges was implementing real-time updates without sacrificing 
-            performance. This was solved by using WebSocket connections and optimizing database 
-            queries to minimize response times.
+        Manual template resizing (0.7x) limits detection to cars of similar size, and the color-based approach
+            struggles with shadows and reflections that alter apparent surface color.
         </p>
     </div>
 
