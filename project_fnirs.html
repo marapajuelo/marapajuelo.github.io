@@ -267,64 +267,65 @@
             <span class="tag">Electrical Design</span>
         </div>
 
-        <img src="cobalt.PNG" 
+        <img src="IMG_7771.jpg" 
              alt="Project Screenshot" 
              class="project-image">
 
         <div class="project-description">
             <p>
                 
-                This project is a low-dose radiation testing system designed to test robustness and 
-                performance of a camera's image quality, current consumption, etc over time.
+                Capstone project that encompasses the hardware, firmware, electrical, software and mechanical design of a low-cost, non-invasive fNIRS neurorehabilitation system 
+                for motor cortex signal detection. This project is in collaboration with Western University in Ontario.
             </p>
 
             <h2>Overview</h2>
             <p>
-                The system is programmed to automatically and remotely take images of a template picture
-                with controlled lighting. The images were collected and processed in a MATLAB script to plot
-                changes in image quality over time.
+                The system is programmed to detect changes in deoxy- and oxy-hemoglobin in the brain's motor cortex, and display the signal on a clinician-friendly GUI in real-time.
+                The signal data is collected and processed in a python script using a Raspberry Pi Pico. 
             </p>
 
             <h2>Key Features</h2>
             <div class="features-grid">
                 <div class="feature-card">
-                    <img src="matlab.PNG" alt="MATLAB" class="feature-image">
-                    <h3>Automated Image Capture</h3>
-                    <p>MATLAB script that takes pictures and records data from camera automatically</p>
+                    <img src="altium.PNG" alt="MATLAB" class="feature-image">
+                    <h3>Electrical Design Using Altium</h3>
+                    <p>Includes near-infrared LEDs, buck converters for voltage step-down, photodiodes, MOSFETS for frequency modulation, low-pass filters for dark noise, and Raspberry Pi Pico.</p>
                 </div>
                 <div class="feature-card">
-                    <img src="camera setup.PNG" alt="LED Box" class="feature-image">
-                    <h3>Controlled Lighting</h3>
-                    <p>Controlled LED-lighting box for consistency</p>
+                    <img src="GUI.PNG" alt="LED Box" class="feature-image">
+                    <h3>Clinician-Friendly GUI</h3>
+                    <p>Displays the required signals without overwhelming the clinician with unnecessary information.</p>
                 </div>
                 <div class="feature-card">
-                    <img src="co60.PNG" alt="Chamber" class="feature-image">
-                    <h3>Radiation Chamber</h3>
-                    <p>Co60 chamber with controlled radiation dose over time</p>
+                    <img src="Mech.PNG" alt="Chamber" class="feature-image">
+                    <h3>Mini Comb Mechanism</h3>
+                    <p>Placed on the head to clear hair from area of interest quickly and efficiently, reducing noise.</p>
                 </div>
             </div>
 
 
             <h2>Technical Challenges</h2>
             <p>
-                One of the main challenges was ensuring consistent lighting conditions. 
-                This was solved by installing LEDs, camera, and image on a secure container.
+                One of the main challenges was getting a good signal. This work is still in progress but implementing a band-pass filter and
+                adjusting the illumination power are methods used to improve SNR (signal-to-noise ratio).
             </p>
 
             <h2>Results</h2>
             <p>
-                The project provided valuable data for MDA space through a publication in IEEE Xplore, where I am listed as a co-author! 
+                For this project I owned the electrical and mechanical design of the device, as well as decisions on all ordering. 
+                Our capstone group is registered to compete in the Simon Cox Design competition in the end of April as well as presenting
+                our work at UVic BME's Capstone presentation day at the beginning of April. Stay tuned for more progress!
             </p>
         </div>
 
         <div class="project-links">
-            <a href="https://ieeexplore.ieee.org/document/10759189?denied=" class="btn" target="_blank">View Publication</a>     
+            <a href="https://www.technologyforliving.org/simon-cox-competition/" class="btn" target="_blank">Simon Cox Design Competition</a>     
         </div>
     </div>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2026 Mara Pajuelo. Built with passion and coffee.</p>
+        <p>&copy; 2026 Mara Pajuelo.</p>
     </footer>
 </body>
 </html>
