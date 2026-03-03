@@ -193,6 +193,28 @@
             padding: 1rem;
         }
 
+        /* Placeholder image style */
+        .placeholder-img {
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.4s ease;
+        }
+
+        .project-card:hover .placeholder-img {
+            transform: scale(1.05);
+        }
+
+        .placeholder-img span {
+            color: rgba(255,255,255,0.5);
+            font-size: 0.9rem;
+            font-weight: 500;
+            letter-spacing: 0.05em;
+        }
+
         /* Contact Section */
         .contact {
             background: #f8f9fa;
@@ -330,6 +352,17 @@
     <section id="projects">
         <h2>Projects</h2>
         <div class="projects-grid">
+
+            <!-- NEW Project: fNIRS System -->
+            <a href="project_fnirs.html" class="project-card">
+                <div class="placeholder-img">
+                    <span>Image coming soon</span>
+                </div>
+                <div class="project-overlay">
+                    <h3 class="project-title">fNIRS System for Neurorehabilitation</h3>
+                </div>
+            </a>
+
             <!-- Project 1 -->
             <a href="project1.html" class="project-card">
                 <img src="cobalt1.PNG" 
@@ -360,56 +393,47 @@
                 </div>
             </a>
 
+            <!-- Projects 4–7 hidden -->
+            <!--
+            <a href="project4.html" class="project-card">
+                <img src="robot.PNG" alt="Project 4" class="project-image">
+                <div class="project-overlay">
+                    <h3 class="project-title">Autonomous Robot</h3>
+                </div>
+            </a>
+
+            <a href="project5.html" class="project-card">
+                <img src="Light Box.PNG" alt="Project 5" class="project-image">
+                <div class="project-overlay">
+                    <h3 class="project-title">Light Box</h3>
+                </div>
+            </a>
+
+            <a href="project6.html" class="project-card">
+                <img src="IMG_0690.JPEG" alt="Project 6" class="project-image">
+                <div class="project-overlay">
+                    <h3 class="project-title">Assistive Guitar Strumming Device</h3>
+                </div>
+            </a>
+
+            <a href="project7.html" class="project-card">
+                <img src="apple.PNG" alt="Project 7" class="project-image">
+                <div class="project-overlay">
+                    <h3 class="project-title">Computer Vision</h3>
+                </div>
+            </a>
+            -->
+
             <!-- Project 4 -->
             <a href="project4.html" class="project-card">
                 <img src="robot.PNG" 
-                     alt="Project 4" 
+                     alt="Autonomous Robot" 
                      class="project-image">
                 <div class="project-overlay">
                     <h3 class="project-title">Autonomous Robot</h3>
                 </div>
             </a>
 
-            <!-- Project 5 -->
-            <a href="project5.html" class="project-card">
-                <img src="Light Box.PNG" 
-                     alt="Project 5" 
-                     class="project-image">
-                <div class="project-overlay">
-                    <h3 class="project-title">Light Box</h3>
-                </div>
-            </a>
-
-            <!-- Project 6 -->
-            <a href="project6.html" class="project-card">
-                <img src="IMG_0690.JPEG" 
-                     alt="Project 6" 
-                     class="project-image">
-                <div class="project-overlay">
-                    <h3 class="project-title">Assistive Guitar Strumming Device</h3>
-                </div>
-            </a>
-            
-            <!-- Project 7 -->
-            <a href="project7.html" class="project-card">
-                <img src="apple.PNG" 
-                     alt="Project 7" 
-                     class="project-image">
-                <div class="project-overlay">
-                    <h3 class="project-title">Computer Vision</h3>
-                </div>
-            </a>
-
-            <!-- Project 8 -->
-            <a href="project9.html" class="project-card">
-                <img src="IMG_3507.JPEG" 
-                     alt="Project 8" 
-                     class="project-image">
-                <div class="project-overlay">
-                    <h3 class="project-title">3D-Printed Snap-Fit Cover</h3>
-                </div>
-            </a>
-            
         </div>
     </section>
 
